@@ -10,9 +10,11 @@ The package is tightly linked to occupy's datamat. The lm_anova
 function (which also computes Greenhouse-Geisser and Huynh-Feldt
 corrections) uses datamats as input. However, the aov function 
 can be used without. The difference is:
-    lm_anova -> Constructs a linear model in R and then uses Anova
+
+    * lm_anova -> Constructs a linear model in R and then uses Anova
                 from car package to compute the appropriate statistics
-    aov -> Uses R's aov function to compute the anova
+
+    * aov -> Uses R's aov function to compute the anova
 
 
 The functions are somewhat checked against SPSS. However, I only
